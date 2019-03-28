@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,500,700,900i");
+p {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.unselect {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  height: 100vh;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto; }
+
+.center {
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+#login {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  float: left; }
+
+#main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  float: left;
+  display: none; }
+
+.block {
+  width: 300px;
+  background-color: #EBEBEB;
+  border: 2px solid #9B9B9B;
+  position: absolute;
+  left: 50%;
+  top: 50%; }
+  .block .headrBlock {
+    width: 100%;
+    height: 60px;
+    background-color: #9B9B9B;
+    float: left;
+    position: relative;
+    color: white;
+    font-size: 18px;
+    line-height: 60px;
+    text-align: center; }
+  .block .btnBlock {
+    position: relative;
+    float: left;
+    width: 90%;
+    margin: 5%;
+    height: 30px; }
+
+#lockTxt {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: white;
+  z-index: 11; }
+
+.inpParr {
+  width: 90%;
+  height: 30px;
+  margin-left: 5%;
+  margin-top: 6%;
+  float: left;
+  position: relative; }
+  .inpParr input {
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 5px; }
+  .inpParr .error {
+    position: absolute;
+    color: #FFFFFF;
+    background: #FF4A4A;
+    padding: 5px;
+    font-weight: 100;
+    font-size: 13px;
+    top: -30px;
+    display: none; }
+  .inpParr .arr {
+    display: none;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    width: 10px;
+    height: 10px;
+    background-color: #FF4A4A;
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Safari */
+    transform: rotate(45deg);
+    border-top-left-radius: 100%; }
+
+header {
+  width: 100%;
+  float: left;
+  height: 10%;
+  position: relative;
+  background-color: #555555; }
+  header #hdName {
+    height: 60px;
+    float: left;
+    line-height: 60px;
+    text-align: center;
+    color: #FEFEF5;
+    font-size: 18px;
+    position: relative; }
+  header #hdCRM {
+    position: relative;
+    float: left;
+    line-height: 60px;
+    font-size: 24px;
+    width: 200px;
+    text-align: left;
+    padding-left: 20px;
+    color: #BEF779; }
+
+#leftMenu {
+  float: left;
+  position: absolute;
+  width: 200px;
+  top: 10%;
+  background-color: white;
+  z-index: 10;
+  overflow-y: auto; }
+  #leftMenu .btnLeft {
+    width: 90%;
+    margin-left: 5%;
+    text-align: left;
+    float: left;
+    height: 30px;
+    margin-top: 10px;
+    line-height: 30px;
+    color: #555555;
+    padding-left: 5px; }
+    @media (max-width: 880px) {
+      #leftMenu .btnLeft {
+        height: 40px;
+        line-height: 40px; } }
+    @media (pointer: coarse) {
+      #leftMenu .btnLeft:active {
+        background: #EBEBEB; } }
+    @media (pointer: fine) {
+      #leftMenu .btnLeft:hover {
+        background: #EBEBEB; } }
+
+.showLeft {
+  animation: showLeft 0.2s; }
+
+@keyframes showLeft {
+  0% {
+    left: -100%; }
+  100% {
+    left: 0px; } }
+
+#btnHeaderLeft {
+  font-size: 1px;
+  position: absolute;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/leftMenu/showChat.svg"); }
+  @media (pointer: coarse) {
+    #btnHeaderLeft:active {
+      background-color: #5F5F5F; } }
+  @media (pointer: fine) {
+    #btnHeaderLeft:hover {
+      background-color: #5F5F5F; } }
+
+.btn {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  cursor: pointer; }
+
+#stage {
+  overflow-y: auto;
+  float: right;
+  position: absolute;
+  background-color: #EBEBEB;
+  right: 0;
+  border-right: 2px solid #CFCFCF;
+  border-left: 2px solid #CFCFCF;
+  display: block; }
+  #stage #stageName {
+    width: 100%;
+    height: 30px;
+    float: left;
+    position: relative;
+    text-align: center;
+    color: #9B9B9B;
+    font-size: 24px;
+    margin-top: 50px;
+    font-size: 18px; }
+  #stage .window {
+    width: 100%;
+    height: 100%;
+    background-color: #EBEBEB;
+    position: relative;
+    float: left; }
+
+.group {
+  width: 98%;
+  margin-left: 1%;
+  height: 60px;
+  line-height: 60px;
+  position: relative;
+  float: left;
+  background-color: #CFCFCF;
+  margin-top: 1%;
+  padding-left: 20px;
+  color: #555555; }
+  @media (pointer: coarse) {
+    .group:active {
+      background-color: #9B9B9B;
+      color: #EBEBEB; } }
+  @media (pointer: fine) {
+    .group:hover {
+      background-color: #9B9B9B;
+      color: #EBEBEB; } }
+
+.animGroup {
+  animation: animGroup 0.3s; }
+
+@keyframes animGroup {
+  0% {
+    width: 30%; }
+  100% {
+    width: 99%; } }
+
+#currGroup {
+  position: relative;
+  float: left;
+  width: 100%;
+  background-color: white;
+  height: 100%; }
+
+#currGroupHeader {
+  position: relative;
+  float: left;
+  z-index: 2;
+  width: 100%;
+  height: 60px;
+  background-color: #CFCFCF;
+  line-height: 60px;
+  text-align: center;
+  color: #555555; }
+
+#currGroupCont {
+  width: 100%;
+  height: calc(100% - 60px);
+  position: relative;
+  float: left;
+  background-color: white;
+  overflow-y: auto; }
+
+#btnBackCurrGroup {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/users/back.svg"); }
+
+#btnEditCurrGroup {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: 0;
+  background-image: url("../img/users/edit.svg"); }
+
+#btnEditCurrGroup, #btnBackCurrGroup {
+  z-index: 2; }
+  @media (pointer: coarse) {
+    #btnEditCurrGroup:active, #btnBackCurrGroup:active {
+      border-bottom: 5px solid #9B9B9B; } }
+  @media (pointer: fine) {
+    #btnEditCurrGroup:hover, #btnBackCurrGroup:hover {
+      border-bottom: 5px solid #9B9B9B; } }
+
+#editCurrGroup {
+  position: absolute;
+  z-index: 2;
+  top: 60px;
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-color: #EBEBEB;
+  display: none;
+  border-bottom: 6px solid #CFCFCF; }
+
+.user {
+  width: 98%;
+  margin-left: 1%;
+  height: 60px;
+  line-height: 60px;
+  position: relative;
+  float: left;
+  background-color: #EBEBEB;
+  margin-top: 1%;
+  color: #9B9B9B; }
+
+.userName {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  float: left;
+  text-align: center;
+  line-height: 60px; }
+  @media (pointer: coarse) {
+    .userName:active {
+      border-bottom: 5px solid #CFCFCF; } }
+  @media (pointer: fine) {
+    .userName:hover {
+      border-bottom: 5px solid #CFCFCF; } }
+
+.userInfo {
+  width: 98%;
+  margin-left: 1%;
+  height: calc(100% - 70px);
+  overflow-y: auto;
+  position: relative;
+  float: left;
+  background-color: white;
+  border: 5px solid #EBEBEB;
+  border-top: none;
+  display: none; }
+  .userInfo p {
+    float: left;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    border: 2px solid #EBEBEB;
+    color: #555555;
+    line-height: 30px;
+    padding: 10px;
+    font-weight: 300; }
+
+.btnRemove {
+  right: 0;
+  background-image: url("../img/users/remove.svg"); }
+
+.btnAdd {
+  right: 0;
+  background-image: url("../img/users/add.svg"); }
+
+.btnAdd, .btnRemove {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  z-index: 1; }
+  @media (pointer: coarse) {
+    .btnAdd:active, .btnRemove:active {
+      border-bottom: 5px solid #9B9B9B; } }
+  @media (pointer: fine) {
+    .btnAdd:hover, .btnRemove:hover {
+      border-bottom: 5px solid #9B9B9B; } }
+
+.remove {
+  animation: remove 0.2s; }
+
+@keyframes remove {
+  0% {
+    height: 60px; }
+  100% {
+    height: 10px; } }
+
+#btnEditAdd {
+  position: absolute;
+  right: 60px;
+  background-image: url("../img/users/add.svg");
+  top: 0;
+  width: 60px;
+  height: 60px;
+  z-index: 2; }
+  @media (pointer: coarse) {
+    #btnEditAdd:active {
+      border-bottom: 5px solid #9B9B9B; } }
+  @media (pointer: fine) {
+    #btnEditAdd:hover {
+      border-bottom: 5px solid #9B9B9B; } }
+
+.divInputInfo {
+  width: 98%;
+  margin-left: 1%;
+  height: 60px;
+  float: left;
+  position: relative;
+  background-color: #7D7D7D;
+  margin-top: 1%; }
+  .divInputInfo .inpUserInfo {
+    float: right;
+    width: 64%;
+    left: 35%;
+    margin-right: 10px;
+    height: 40px;
+    padding-left: 5px;
+    margin-top: 10px;
+    position: absolute;
+    font-size: 16px; }
+  .divInputInfo .textUserInfo {
+    width: 35%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+    color: white; }

@@ -1,0 +1,26 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="60px" height="60px" viewBox="0 0 60 60">
+<defs>
+<image id="Bitmap_1" x="0" y="0" width="3286" height="1080" xlink:href="./images/Bitmap_1.png"/>
+
+<path id="Layer1_0_1_STROKES" stroke="#9B9B9B" stroke-width="3" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="3" fill="none" d="
+M 18.35 30.15
+L 40.05 30.15"/>
+
+<path id="Layer0_0_1_STROKES" stroke="#9B9B9B" stroke-width="3" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="3" fill="none" d="
+M 31.25 41.05
+L 18.5 30.2 31.2 19.35"/>
+</defs>
+
+<g transform="matrix( 1, 0, 0, 1, 104,-127) ">
+<use xlink:href="#Bitmap_1"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Layer1_0_1_STROKES"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Layer0_0_1_STROKES"/>
+</g>
+</svg>
